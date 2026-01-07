@@ -1,0 +1,44 @@
+.card {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  background: #fff;
+  border-radius: 16px;
+  border:#E0E0E0 solid 1px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+  &:hover{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.badge{
+    color: #FFBA18;
+    background: #FFF3D8;
+    width: 140px;
+    height: 32px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.avatar {
+  width: 266px;
+  height: 210px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+span {
+  font-size: 16px;
+  color: #777;
+}

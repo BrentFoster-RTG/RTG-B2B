@@ -1,0 +1,38 @@
+.card {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 32px;
+  color: #555;
+}
+
+.homeBtn {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fbbf24;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.homeBtn:hover {
+  opacity: 0.9;
+}
