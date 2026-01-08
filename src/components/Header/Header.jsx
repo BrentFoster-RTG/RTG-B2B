@@ -1,18 +1,33 @@
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo.png';
-import styles from './Header.module.scss';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import LanguageIcon from '@mui/icons-material/Language';
+import { useEffect, useState } from "react";
+import logo from "../../assets/logo.png";
+import styles from "./Header.module.scss";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import { useLangChange } from "../../context/LanguageContext";
-
-import LanguageDropdown from '../LanguageDropdown/LanguageDropdown';
+import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
 
 const Header = () => {
   const { lang } = useLangChange();
+  const [isFloating, setIsFloating] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsFloating(window.scrollY > 40);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <div className={styles.main_container}>
-      <Link to="/"><img src={logo} alt="logo" /></Link>
+    <header
+      className={`${styles.main_container} ${
+        isFloating ? styles.floating : ""
+      }`}
+    >
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
 
       <div className={styles.navbar_container}>
         <p>{lang === "eng" ? "Corporate Clients" : "Unternehmensklienten"}</p>
@@ -23,12 +38,9 @@ const Header = () => {
 
       <div className={styles.right_container}>
         <LightModeIcon />
-
-        <div className={styles.language_container}>
-          <LanguageDropdown />
-        </div>
+        <LanguageDropdown />
       </div>
-    </div>
+    </header>
   );
 };
 

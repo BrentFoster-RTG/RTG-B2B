@@ -9,6 +9,14 @@ import ProfileCard from '../../cards/ProfileCard/ProfileCard';
 import CostomHover from '../../cards/CostomHover/CostomHover';
 import Inofation from '../../cards/Inofation/Inofation';
 import ServiceCard from '../../cards/ServiceCard/ServiceCard';
+import CorporatedNav from '../../components/Header/CorporatedNav';
+import EducatorsNav from '../../components/Header/EducatorsNav';
+import TravelNav from '../../components/Header/TravelNav';
+import ServiceNav from '../../components/Header/ServiceNav';
+import MainHero from '../../components/MainHero/MainHero';
+import SecondaryHero from '../../components/SecondaryHero/SecondaryHero';
+import TravelAgentHero from '../../components/TravelAgentHero/TravelAgentHero';
+import CaseHero from '../../components/CaseHero/CaseHero';
 
 const Home = () => {
   return (
@@ -43,6 +51,21 @@ const Home = () => {
         <ServiceCard/>
         <ServiceCard/>
       </div>
+      <CorporatedNav/>
+      <EducatorsNav/>
+      <TravelNav/>
+      <ServiceNav/>
+      <p>Home &gt; Corporate Clients &gt; Corporate Solutions</p>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <MainHero/>
+      <SecondaryHero/>
+      <TravelAgentHero/>
+      <CaseHero/>
+
     </div>
   )
 }
