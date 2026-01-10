@@ -1,7 +1,45 @@
-.hero {
-  padding: 120px 100px;
+.section {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  background-color: #E0E0E0;
 }
 
-.header {
-  margin-bottom: 40px;
+.badge {
+  display: inline-block;
+  background: #ffffff;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #323232;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  all: unset;
+  color: #777;
+  margin-bottom: 48px;
+}
+
+.card {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+
+  img {
+    width: 1062px;
+    height: 600px;
+    display: block;
+  }
 }

@@ -1,15 +1,19 @@
 import styles from "./CaseHero.module.scss";
-import caseImg from "../../assets/case.png";
+import caseImg from "../../assets/case.jpg";
 
 const CaseHero = () => {
   return (
-    <section className={styles.hero}>
-      <div className={styles.header}>
-        <h2>Case Study Heading</h2>
-        <p>See how our partners grow with us</p>
+    <section className={styles.section}>
+      <div>
+            <span className={styles.badge}>Partnership Cases</span>
       </div>
 
-      <img src={caseImg} alt="Case Study" />
+      <h2 className={styles.title}>Case Study Heading</h2>
+      <p className={styles.subtitle}>Intriguing study subheading</p>
+
+      <div className={styles.card}>
+        <img src={caseImg} alt="" />
+      </div>
     </section>
   );
 };

@@ -1,25 +1,45 @@
 import styles from "./TravelAgentHero.module.scss";
-import img from "../../assets/hero-main.png";
+import heroImg from "../../assets/travel-agency.png";
 
 const TravelAgentHero = () => {
   return (
-    <section className={styles.hero}>
-      <div className={styles.content}>
-        <h2>
-          Connect your clients with one of Hamburg’s
-          highest rated tour companies
-        </h2>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <span className={styles.badge}>Based on 10000+ Reviews</span>
 
-        <div className={styles.card}>
-          <p>Get a quick quote</p>
-          <input placeholder="Name" />
-          <input placeholder="Email" />
-          <button>Submit</button>
+        <h1 className={styles.title}>
+          CONNECT YOUR CLIENTS WITH ONE OF <br />
+          HAMBURG’S <span className={styles.hightlight}>HIGHEST RATED</span> TOUR COMPANIES
+        </h1>
+
+        <div className={styles.content}>
+          <img src={heroImg} alt="" className={styles.image} />
+
+          <form className={styles.form}>
+            <h3>Get a Quick Quote</h3>
+            <p>
+              Travel Agent? Connect with us to get a quick Hamburg solution for
+              your customers worldwide
+            </p>
+
+            <label>
+              Company name
+              <input placeholder="Your Company" />
+            </label>
+
+            <label>
+              Email
+              <input placeholder="Your Email" />
+            </label>
+
+            <label>
+              How can we help?
+              <input placeholder="Your Request" />
+            </label>
+
+            <button type="submit">Send Request</button>
+          </form>
         </div>
-      </div>
-
-      <div className={styles.imageWrap}>
-        <img src={img} alt="" />
       </div>
     </section>
   );

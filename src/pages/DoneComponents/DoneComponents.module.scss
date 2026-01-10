@@ -1,0 +1,16 @@
+@use '../../styles/abstracts/mixins' as *;
+
+.btn{
+    @include explore-btn
+}
+.about_btn{
+    @include about-btn
+}
+.more_btn{
+    @include more-btn
+}
+.cards_con{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
