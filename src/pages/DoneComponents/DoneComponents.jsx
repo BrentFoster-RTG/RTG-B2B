@@ -17,6 +17,7 @@ import MainHero from '../../components/MainHero/MainHero';
 import SecondaryHero from '../../components/SecondaryHero/SecondaryHero';
 import TravelAgentHero from '../../components/TravelAgentHero/TravelAgentHero';
 import CaseHero from '../../components/CaseHero/CaseHero';
+import StatisticImg from '../../cards/StatisticImg/StatisticImg';
 
 const DoneComponents = () => {
   return (
@@ -66,6 +67,25 @@ const DoneComponents = () => {
       <TravelAgentHero/>
       <CaseHero/>
 
+      <StatisticImg/>
+      <br />
+      <br />
+      <Partner/>
+      <br />
+      <br />
+      <Processes/>
+      <br />
+      <br />
+      <ContactInfo/>
+      <br />
+      <br />
+      <Error404/>
+      <br />
+      <br />
+      <FilesPage/>
+      <br />
+      <br />
+      <ContactsPage/>
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}

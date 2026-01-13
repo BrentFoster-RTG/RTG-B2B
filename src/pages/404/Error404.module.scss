@@ -1,0 +1,75 @@
+@use '../../styles/abstracts/mixins' as *;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  background-color: #ffffff;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #191716;
+    margin-bottom: 16px;
+  }
+
+  .helper {
+    margin-top: 24px;
+    font-weight: 500;
+    color: #4b5563;
+  }
+}
+
+  .apolo {
+    font-size: 20px;
+    color: #535862;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
+.right {
+  background-image: url('../../assets/canal.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+}
+
+.badge{
+    color: #FFBA18;
+    background: #FFF3D8;
+    width: 140px;
+    height: 32px;
+    padding: 6px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.back{
+  @include more-btn;
+  padding:17px 70px;
+}
+
+.home{
+  @include explore-btn;
+}
