@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 import styles from "./Header.module.scss";
@@ -29,12 +29,23 @@ const Header = () => {
         <img src={logo} alt="logo" />
       </Link>
 
-      <div className={styles.navbar_container}>
-        <p>{lang === "eng" ? "Corporate Clients" : "Unternehmensklienten"}</p>
-        <p>{lang === "eng" ? "Travel Agents" : "Reisebüros"}</p>
-        <p>{lang === "eng" ? "Educators" : "Bildungsanbieter"}</p>
-        <p>{lang === "eng" ? "Service Providers" : "Dienstleister"}</p>
-      </div>
+      <nav className={styles.navbar_container}>
+        <NavLink to="/corporate-clients">
+          {lang === "eng" ? "Corporate Clients" : "Unternehmensklienten"}
+        </NavLink>
+
+        <NavLink to="/travel-agents">
+          {lang === "eng" ? "Travel Agents" : "Reisebüros"}
+        </NavLink>
+
+        <NavLink to="/educators">
+          {lang === "eng" ? "Educators" : "Bildungsanbieter"}
+        </NavLink>
+
+        <NavLink to="/service-providers">
+          {lang === "eng" ? "Service Providers" : "Dienstleister"}
+        </NavLink>
+      </nav>
 
       <div className={styles.right_container}>
         <LightModeIcon />
