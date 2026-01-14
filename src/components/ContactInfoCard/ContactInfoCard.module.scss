@@ -1,17 +1,62 @@
+@use '../../styles/abstracts/mixins' as *;
+
 .card {
-  background: #E0E0E0;
-  border-radius: 16px;
-  padding: 24px;
+  background: #F9F9F9;
+  border-radius: 18px;
+  border: #E0E0E0 1px solid;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+
+  h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #181D27;
+  }
 }
 
 .subtitle {
-  color: #666;
-  margin-bottom: 16px;
+  color: #717680;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 8px 0 24px;
 }
 
 .items {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.item {
+  display: flex;
   gap: 12px;
-  margin-bottom: 20px;
+
+  strong {
+    font-size: 18px;
+    display: block;
+    font-weight: 600;
+  }
+
+  .text {
+    font-size: 13px;
+    color: #666;
+    display: block;
+  }
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 18px;
+  color: #191716;
+}
+
+.button {
+  @include more-btn
+}
+.text_info{
+  font-size: 20px;
+  color: #323232;
 }

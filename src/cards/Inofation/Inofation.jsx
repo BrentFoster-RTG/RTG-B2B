@@ -12,7 +12,7 @@ const Inofation = () => {
       <span className={styles.badge}>Conference</span>
 
       <h4>Innovation Conference 2025</h4>
-      <span>Hamburg’s most anticipated technological conference of 2025. Here is a detailed recap.</span>
+      <span className={styles.description}>Hamburg’s most anticipated technological conference of 2025. Here is a detailed recap.</span>
 
       <div className={styles.socials}>
       </div>

@@ -1,5 +1,16 @@
 .layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 32px;
+  justify-content: center;
+}
+
+.formWrapper {
+  background: transparent;
+  transition: all 0.35s ease;
+  align-self: start;
+}
+
+.success {
+  max-width: 420px;
 }

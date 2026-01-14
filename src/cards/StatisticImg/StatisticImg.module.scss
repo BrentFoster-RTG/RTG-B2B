@@ -31,12 +31,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 32px;
-    span{
+    .icon{
         color: #FFBA18;
         font-size: 64px;
         font-weight: 600;
     }
-    p{
+    .text{
         color: #323232;
         font-size: 18px;
         font-weight: 600;

@@ -15,7 +15,7 @@ export default function ProfileCard() {
       />
 
       <h4>Eric Smith</h4>
-      <span>Founder & CEO</span>
+      <span className={styles.pos}>Founder & CEO</span>
 
       <div className={styles.socials}>
         <XIcon />

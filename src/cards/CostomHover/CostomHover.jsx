@@ -12,7 +12,7 @@ const CostomHover = () => {
       <span className={styles.badge}>Team Building</span>
 
       <h4>Custom Team Building Experience</h4>
-      <span>How do you create a memorable team building that can impress your colleagues and managers?</span>
+      <span className={styles.description}>How do you create a memorable team building that can impress your colleagues and managers?</span>
 
       <div className={styles.socials}>
       </div>

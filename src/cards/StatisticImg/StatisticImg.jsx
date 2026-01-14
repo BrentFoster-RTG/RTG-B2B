@@ -11,20 +11,20 @@ const StatisticImg = () => {
             <h2>Our company in numbers</h2>
             <div className={styles.statistic}>
                 <div>
-                    <span>10+</span>
-                    <p>Years in business</p>
+                    <span className={styles.icon}>10+</span>
+                    <p className={styles.text}>Years in business</p>
                 </div>
                 <div>
-                    <span>&gt;90</span>
-                    <p>Corporate clients</p>
+                    <span className={styles.icon}>&gt;90</span>
+                    <p className={styles.text}>Corporate clients</p>
                 </div>
                 <div>
-                    <span>50+</span>
-                    <p>Ready made experiences</p>
+                    <span className={styles.icon}>50+</span>
+                    <p className={styles.text}>Ready made experiences</p>
                 </div>
                 <div>
-                    <span>10k+</span>
-                    <p>5-star traveler reviews</p>
+                    <span className={styles.icon}>10k+</span>
+                    <p className={styles.text}>5-star traveler reviews</p>
                 </div>
             </div>
         </div>

@@ -10,11 +10,18 @@ const ContactsPage = () => {
   return (
     <div className={styles.layout}>
       <ContactInfoCard />
-      {success ? (
-        <SuccessMessage onClose={() => setSuccess(false)} />
-      ) : (
-        <ContactForm onSuccess={() => setSuccess(true)} />
-      )}
+
+      <div
+        className={`${styles.formWrapper} ${
+          success ? styles.success : ""
+        }`}
+      >
+        {success ? (
+          <SuccessMessage onClose={() => setSuccess(false)} />
+        ) : (
+          <ContactForm onSuccess={() => setSuccess(true)} />
+        )}
+      </div>
     </div>
   );
 };

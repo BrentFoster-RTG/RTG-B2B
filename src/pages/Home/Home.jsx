@@ -19,7 +19,7 @@ const Home = () => {
           <FeatureCards/>
           <CorporateCard/>
           <div className={styles.text_descriptions}>
-            <span>
+            <span className={styles.tiny}>
               Our Customers
             </span>
             <h2>

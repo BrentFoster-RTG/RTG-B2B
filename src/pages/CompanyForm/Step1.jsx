@@ -23,7 +23,7 @@ const Step1 = ({ next }) => {
   return (
     <div className={styles.form_card}>
       <div className={styles.progress}>
-        <span>Step 1/3</span>
+        <span className={styles.step}>Step 1/3</span>
         <div className={styles.progress_bar}>
           <div className={styles.progress_fill} style={{ width: "33%" }}></div>
         </div>

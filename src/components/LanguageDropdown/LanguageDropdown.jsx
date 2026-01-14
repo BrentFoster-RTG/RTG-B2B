@@ -21,7 +21,7 @@ const LanguageDropdown = () => {
         onClick={() => setOpen(!open)}
       >
         <img src={LANGS[lang].flag} alt={lang} />
-        <span>{LANGS[lang].label}</span>
+        <span className={styles.curr_lang}>{LANGS[lang].label}</span>
       </button>
 
       {open && (
@@ -36,7 +36,7 @@ const LanguageDropdown = () => {
               }}
             >
               <img src={item.flag} alt={item.label} />
-              <span>{item.label}</span>
+              <span className={styles.choose_lang}>{item.label}</span>
             </button>
           ))}
         </div>
