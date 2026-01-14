@@ -2,7 +2,7 @@ import React from 'react'
 import styles from'./DoneComponents.module.scss';
 import CorporateCard from '../../cards/CorporateCard/CorporateCard';
 import DMCCard from '../../cards/DMCCard/DMCCard';
-import OrganizationCard from '../../cards/OrganizationCardOrganizationCard/OrganizationCard';
+import OrganizationCard from '../../cards/OrganizationCard/OrganizationCard';
 import ShortNoticeCard from '../../cards/ShortNoticeCard/ShortNoticeCard';
 import TravelAgentsCard from '../../cards/TravelAgentsCard/TravelAgentsCard';
 import ProfileCard from '../../cards/ProfileCard/ProfileCard';

@@ -1,6 +1,5 @@
 import styles from "./ContactInfoCard.module.scss";
-import ContactItem from "../ContactItem/ContactItem";
-import Button from "../Button/Button";
+import LightModeIcon from '@mui/icons-material/LightMode';
 
 const ContactInfoCard = () => {
   return (
@@ -11,12 +10,10 @@ const ContactInfoCard = () => {
       </p>
 
       <div className={styles.items}>
-        <ContactItem title="Work hours" text="Monday - Friday" value="09:00 - 18:00" />
-        <ContactItem title="Phone" value="+1 (555) 000-0000" />
-        <ContactItem title="Email" value="corporate@robin.de" />
+        <LightModeIcon sx={{color:'#FFBA18'}} />
       </div>
 
-      <Button variant="outline">All Contacts ↗</Button>
+      <button>All Contacts ↗</button>
     </div>
   );
 };

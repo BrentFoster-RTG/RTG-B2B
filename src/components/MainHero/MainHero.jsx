@@ -5,7 +5,7 @@ const MainHero = () => {
     <section className={styles.heroContainer}>
       <div className={styles.heroContent}>
         <div className={styles.heroTextSection}>
-          <span className={styles.badge}>Based on 10000+ Reviews</span>
+          <span className={styles.badge}>Based on 10000+ 5-star reviews</span>
 
           <h1 className={styles.mainHeading}>
             PARTNER WITH ONE OF HAMBURG'S{" "}

@@ -1,4 +1,5 @@
 import styles from "./CorporateCard.module.scss";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 export default function CorporateCard() {
   return (
@@ -15,7 +16,7 @@ export default function CorporateCard() {
 
       <div className={styles.actions}>
         <button className={styles.primary}>Corporate Solutions</button>
-        <button className={styles.secondary}>Learn More ↗</button>
+        <button className={styles.secondary}>Learn More <ArrowOutwardIcon sx={{ fontSize: 18, color: "#323232" }}/></button>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 @mixin explore-btn{
     color: #FCFCFC;
-    font-size: 16px;
+    font-size: 18px;
     background-color:#323232;
-    padding: 17px 48px;
+    padding: 12px 52px;
     border-radius: 100px;
     transition: all 0.5s ease;
     &:hover{
@@ -13,8 +13,8 @@
 }
 @mixin about-btn{
     color: #323232;
-    font-size: 16px;
-    padding: 17px 81px;
+    font-size: 18px;
+    padding: 12px 81px;
     border: #323232 2px solid;
     border-radius: 100px;
     transition: all 0.5s ease;
@@ -25,7 +25,7 @@
 }
 @mixin more-btn{
     color: #323232;
-    font-size: 16px;
+    font-size: 18px;
     padding: 12px 58px;
     border: #323232 2px solid;
     border-radius: 100px;
@@ -33,5 +33,24 @@
     &:hover{
         color: #191716;
         scale: 1.1;
+    }
+}
+
+@mixin text-desc{
+    span{
+        color: #727272;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 600;
+        color: #191716;
+    }
+    p{
+        display: inline;
+        font-weight: 400;
+        font-size: 20px;
+        color: #535862;
     }
 }
